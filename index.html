@@ -4,101 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
     <title>Google Calculator</title>
 
-    <style>
-      html,
-      body {
-        height: 100%;
-        width: 100%;
-        margin: 0;
-        font-family: Product Sans;
-        background-color: #fffef2;
-      }
-      @font-face {
-        font-family: "Product Sans";
-        src: url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2)
-          format("woff2");
-      }
 
-      .button-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        align-items: center;
-        justify-items: center;
-        height: 70%;
-      }
-
-      .AC-button,
-      .operator-button,
-      .digit-button,
-      .backspace-button,
-      .equal-button {
-        display: grid;
-        align-items: center;
-        justify-content: center;
-        width: 65px;
-        height: 65px;
-        margin: 5px;
-        background-color: #f7f6e5;
-        border-radius: 50px;
-        font-size: 1.8rem;
-        color: black;
-      }
-
-      .AC-button {
-        background-color: #92ffc2;
-      }
-
-      .operator-button {
-        background-color: #eee8b7;
-        font-size: 2.2rem;
-      }
-
-      .equal-button {
-        background-color: #ffeb75;
-        font-size: 2.8rem;
-      }
-
-      .input-field {
-        display: block;
-        width: 95%;
-        font-size: 4.5rem;
-        text-align: right;
-        background-color: hsla(0, 0%, 0%, 0);
-        border: none;
-        /* caret-color: yellow; */
-        outline: none;
-        height: 100%;
-        z-index: 100;
-      }
-
-      .input-div {
-        background-color: #ebe8d0;
-        display: grid;
-        width: 100%;
-        height: 30%;
-        align-items: center;
-        justify-items: center;
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
-      }
-
-      .line {
-        position: absolute;
-        margin-left: auto;
-        margin-right: auto;
-        left: 0;
-        right: 0;
-        top: 28%;
-        border-radius: 10px;
-        width: 30px;
-        height: 3px;
-        background-color: black;
-        justify-content: center;
-        text-align: center;
-      }
-    </style>
   </head>
   <body>
     <div class="input-div"><input class="input-field" type="text" /></div>
