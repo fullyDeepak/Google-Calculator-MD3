@@ -18,6 +18,12 @@ body {
   align-items: center;
   justify-items: center;
   height: 70%;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #cc0000;
 }
 
 .AC-button,
@@ -35,6 +41,7 @@ body {
   border-radius: 50px;
   font-size: 1.8rem;
   color: black;
+  cursor: pointer;
 }
 
 .AC-button {
@@ -62,6 +69,7 @@ body {
   outline: none;
   height: 100%;
   z-index: 100;
+  font-family: 'Product Sans';
 }
 
 .input-div {

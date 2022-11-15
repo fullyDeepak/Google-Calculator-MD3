@@ -4,13 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Google Calculator</title>
-
-
   </head>
   <body>
-    <div class="input-div"><input class="input-field" type="text" /></div>
+    <div class="input-div">
+      <input
+        id="my-text"
+        class="input-field"
+        type="text"
+        pattern="(/^[-+]?[0-9]+$/)"
+      />
+    </div>
 
     <div class="line"></div>
 
@@ -47,5 +52,6 @@
       </div>
       <div class="equal-button">&#x3D;</div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
