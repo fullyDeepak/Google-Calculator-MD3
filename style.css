@@ -104,6 +104,7 @@ body {
 }
 
 .calc-button{
+    -webkit-tap-highlight-color:  #ffffff00;
     transition: border-radius 0.8s;
 }
 
