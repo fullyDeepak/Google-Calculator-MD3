@@ -105,10 +105,24 @@ body {
 
 .calc-button{
     -webkit-tap-highlight-color:  #ffffff00;
-    transition: border-radius 0.5s;
+    transition: border-radius 0.6s;
 }
 
 .calc-button:active{
     border-radius: 25px;
     filter: brightness(90%);
+}
+
+
+@media (min-width: 800px){
+    .calc-button{
+        width: 65px;
+        height: 65px;
+        font-size: 2.0rem;
+    }
+
+    .backspace-button svg{
+        height: 25px;
+        width: 25px;
+    }
 }

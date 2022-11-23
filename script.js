@@ -9,10 +9,12 @@ function changeX(key) {
   if (key.key == "x" || key.key == "X" || key.key == "*") {
     txt.value += "\u{00D7}";
   } else if (key.key == "Enter" || key.key == "=") {
-    txt.value = txt.value.replace("\u{00D7}", "*");
-    txt.value = txt.value.replace("\u{00F7}", "/");
-    txt.value = txt.value.replace("%", "*0.01*");
-    txt.value = eval(txt.value);
+    if (!(txt.value=="")){
+        txt.value = txt.value.replace("\u{00D7}", "*");
+        txt.value = txt.value.replace("\u{00F7}", "/");
+        txt.value = txt.value.replace("%", "*0.01*");
+        txt.value = eval(txt.value);
+    }
   } else if (key.key == "/") {
     txt.value += "\u{00F7}";
   } else if (key.key == "Escape") {
