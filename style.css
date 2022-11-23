@@ -5,6 +5,7 @@ body {
   margin: 0;
   font-family: Product Sans;
   background-color: #fffef2;
+  touch-action: manipulation;
 }
 @font-face {
   font-family: "Product Sans";
