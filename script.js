@@ -63,7 +63,7 @@ for (let i = 0; i < calcButtons.length; i++) {
 function delLast() {
   txt.value = txt.value.slice(0, -1);
   document.querySelector(".input-field").focus();
-  window.navigator.vibrate(50);
+  window.navigator.vibrate(18);
 }
 
 function printValue(e) {
@@ -71,15 +71,15 @@ function printValue(e) {
   console.log(e.srcElement.innerText);
   if (e.srcElement.innerText == "AC") {
     txt.value = "";
-    window.navigator.vibrate(50);
+    window.navigator.vibrate(18);
   }
   //barcets ka logic
   else if (e.srcElement.innerText == "(  )") {
     txt.value = "Not implemented yet";
-    window.navigator.vibrate(50);
+    window.navigator.vibrate(18);
   } else if (e.srcElement.innerText == "%") {
     txt.value += "%";
-    window.navigator.vibrate(50);
+    window.navigator.vibrate(18);
   }
   // else if(e.srcElement.innerText == '·'){
   //     let dotPos = 0;
@@ -95,7 +95,7 @@ function printValue(e) {
     txt.value = txt.value.replace("\u{00D7}", "*");
     txt.value = txt.value.replace("\u{00F7}", "/");
     txt.value = eval(txt.value);
-    window.navigator.vibrate(50);
+    window.navigator.vibrate(18);
   }
   // else if (){
   //     str = str.slice(0, -1);
@@ -103,7 +103,7 @@ function printValue(e) {
   // }
   else {
     txt.value += e.srcElement.innerText;
-    window.navigator.vibrate(50);
+    window.navigator.vibrate(18);
   }
   document.querySelector(".input-field").focus();
 }
