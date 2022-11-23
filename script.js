@@ -94,9 +94,12 @@ function printValue(e) {
   //     else if()
   // }
   else if (e.srcElement.innerText == "=") {
-    txt.value = txt.value.replace("\u{00D7}", "*");
-    txt.value = txt.value.replace("\u{00F7}", "/");
-    txt.value = eval(txt.value);
+    if (!(txt.value=="")){
+        txt.value = txt.value.replace("\u{00D7}", "*");
+        txt.value = txt.value.replace("\u{00F7}", "/");
+        txt.value = txt.value.replace("%", "*0.01*");
+        txt.value = eval(txt.value);
+    }
     window.navigator.vibrate(18);
   }
   // else if (){
