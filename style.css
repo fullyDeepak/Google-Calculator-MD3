@@ -102,3 +102,12 @@ body {
     height: 35px;
     width: 35px;
 }
+
+.calc-button{
+    transition: border-radius 0.8s;
+}
+
+.calc-button:active{
+    border-radius: 25px;
+    filter: brightness(90%);
+}

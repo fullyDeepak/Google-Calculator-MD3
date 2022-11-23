@@ -76,8 +76,10 @@ function printValue(e) {
   //barcets ka logic
   else if (e.srcElement.innerText == "(  )") {
     txt.value = "Not implemented yet";
+    window.navigator.vibrate(50);
   } else if (e.srcElement.innerText == "%") {
     txt.value += "%";
+    window.navigator.vibrate(50);
   }
   // else if(e.srcElement.innerText == '·'){
   //     let dotPos = 0;
@@ -101,6 +103,7 @@ function printValue(e) {
   // }
   else {
     txt.value += e.srcElement.innerText;
+    window.navigator.vibrate(50);
   }
   document.querySelector(".input-field").focus();
 }
