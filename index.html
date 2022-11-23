@@ -4,41 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ebe8d0" />
     <link rel="stylesheet" href="style.css" />
     <title>Google Calculator</title>
   </head>
   <body>
     <div class="input-div">
-      <input
-        id="my-text"
-        class="input-field"
-        type="text"
-        pattern="(/^[-+]?[0-9]+$/)"
-      />
+      <input id="my-text" class="input-field" type="text" onkeydown="return checkValue(event.key)"/>
     </div>
 
     <div class="line"></div>
 
     <div class="button-grid">
-      <div class="AC-button">AC</div>
-      <div class="operator-button">(&nbsp;&nbsp;)</div>
-      <div class="operator-button">%</div>
-      <div class="operator-button">&#247;</div>
-      <div class="digit-button">7</div>
-      <div class="digit-button">8</div>
-      <div class="digit-button">9</div>
-      <div class="operator-button">&#215;</div>
-      <div class="digit-button">4</div>
-      <div class="digit-button">5</div>
-      <div class="digit-button">6</div>
-      <div class="operator-button">&#8211;</div>
-      <div class="digit-button">1</div>
-      <div class="digit-button">2</div>
-      <div class="digit-button">3</div>
-      <div class="operator-button">&#43;</div>
-      <div class="digit-button">0</div>
-      <div class="digit-button">&#183;</div>
-      <div class="backspace-button">
+      <div class="AC-button calc-button">AC</div>
+      <div class="operator-button calc-button">(&nbsp;&nbsp;)</div>
+      <div class="operator-button calc-button">%</div>
+      <div class="operator-button calc-button">&#247;</div>
+      <div class="digit-button calc-button">7</div>
+      <div class="digit-button calc-button">8</div>
+      <div class="digit-button calc-button">9</div>
+      <div class="operator-button calc-button">&#215;</div>
+      <div class="digit-button calc-button">4</div>
+      <div class="digit-button calc-button">5</div>
+      <div class="digit-button calc-button">6</div>
+      <div class="operator-button calc-button">&#8211;</div>
+      <div class="digit-button calc-button">1</div>
+      <div class="digit-button calc-button">2</div>
+      <div class="digit-button calc-button">3</div>
+      <div class="operator-button calc-button">&#43;</div>
+      <div class="digit-button calc-button">0</div>
+      <div class="digit-button calc-button">&#183;</div>
+      <div class="backspace-button calc-button">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -50,8 +46,9 @@
           />
         </svg>
       </div>
-      <div class="equal-button">&#x3D;</div>
+      <div class="equal-button calc-button">&#x3D;</div>
     </div>
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
+    <!-- <script defer src="script2.js"></script> -->
   </body>
 </html>
