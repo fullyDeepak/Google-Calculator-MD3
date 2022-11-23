@@ -12,7 +12,7 @@ function changeX(key){
     else if (key.key=='Enter' || key.key == '='){
         txt.value = (txt.value).replace("\u{00D7}", "*")
         txt.value = (txt.value).replace("\u{00F7}", "/")
-        txt.value = (txt.value).replace("%", "*0.0")
+        txt.value = (txt.value).replace("%", "*0.01*")
         txt.value = eval(txt.value)
     }
     else if (key.key == '/'){
