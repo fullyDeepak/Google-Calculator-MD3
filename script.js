@@ -9,11 +9,11 @@ function changeX(key) {
   if (key.key == "x" || key.key == "X" || key.key == "*") {
     txt.value += "\u{00D7}";
   } else if (key.key == "Enter" || key.key == "=") {
-    if (!(txt.value=="")){
-        txt.value = txt.value.replace("\u{00D7}", "*");
-        txt.value = txt.value.replace("\u{00F7}", "/");
-        txt.value = txt.value.replace("%", "*0.01*");
-        txt.value = eval(txt.value);
+    if (!(txt.value == "")) {
+      txt.value = txt.value.replace("\u{00D7}", "*");
+      txt.value = txt.value.replace("\u{00F7}", "/");
+      txt.value = txt.value.replace("%", "*0.01*");
+      txt.value = eval(txt.value);
     }
   } else if (key.key == "/") {
     txt.value += "\u{00F7}";
@@ -77,9 +77,10 @@ function printValue(e) {
   }
   //barcets ka logic
   else if (e.srcElement.innerText == "(  )") {
-    txt.value = "Not implemented yet";
+    alert("Not implemented yet");
     window.navigator.vibrate(18);
-  } else if (e.srcElement.innerText == "%") {
+  } 
+  else if (e.srcElement.innerText == "%") {
     txt.value += "%";
     window.navigator.vibrate(18);
   }
@@ -93,12 +94,17 @@ function printValue(e) {
   //     }
   //     else if()
   // }
+  else if (e.srcElement.innerText == "·") {
+      txt.value += ".";
+      window.navigator.vibrate(18);
+    }
   else if (e.srcElement.innerText == "=") {
-    if (!(txt.value=="")){
-        txt.value = txt.value.replace("\u{00D7}", "*");
-        txt.value = txt.value.replace("\u{00F7}", "/");
-        txt.value = txt.value.replace("%", "*0.01*");
-        txt.value = eval(txt.value);
+    if (!(txt.value == "")) {
+      txt.value = txt.value.replace("\u{00D7}", "*");
+      txt.value = txt.value.replace("\u{00F7}", "/");
+      txt.value = txt.value.replace("%", "*0.01*");
+      txt.value = txt.value.replace("–", "-");
+      txt.value = eval(txt.value);
     }
     window.navigator.vibrate(18);
   }

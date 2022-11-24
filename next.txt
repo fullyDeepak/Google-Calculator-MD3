@@ -1,0 +1,8 @@
+Feature will be added in future:
+
+support for os level dark mode
+implement the logic for ()
+implement the logic for the operator so can only input one at a position (no more multiple +,-,*,/)
+implement the logic for delete the content at caret(cursor)
+at the time of evalation if input field has any operator at last then truncate it.
+
