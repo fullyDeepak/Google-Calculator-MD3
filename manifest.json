@@ -1,40 +1,66 @@
 {
-"name": "Gugul Calculator",
-"short_name": "Gugul Calculator",
-"start_url": "/calculator-app/",
-"display": "standalone",
-"description": "Google Calculator on Web with Material You Theme.",
-"lang": "en",
-"dir": "auto",
-"theme_color": "#ebe8d0",
-"background_color": "#ebe8d0",
-"orientation": "any",
-"icons": [
+  "name": "Gugul Calculator",
+  "short_name": "Gugul Calculator",
+  "start_url": "/calculator-app/",
+  "display": "standalone",
+  "description": "Google Calculator on Web with Material You Theme.",
+  "lang": "en",
+  "dir": "auto",
+  "theme_color": "#ebe8d0",
+  "background_color": "#ebe8d0",
+  "orientation": "any",
+  "icons": [
     {
-        "src": "favicon/android-chrome-512x512.png",
-        "sizes": "512x512",
-        "type": "image/png",
-        "purpose": "maskable"
+      "src": "favicon/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     },
     {
-        "src": "favicon/android-chrome-192x192.png",
-        "sizes": "192x192",
-        "type": "image/png",
-        "purpose": "any"
+      "src": "favicon/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
     }
-],
-"related_applications": [
+  ],
+  "screenshots": [
     {
-        "platform":"windows",
-        "url": " The URL to your app in that app store"
-    }
-],
-"prefer_related_applications": "false",
-"shortcuts": [
+      "src": "screenshotsdesktop.png",
+      "sizes": "1920x1080",
+      "type": "image/png",
+      "description": "This is how it looks on desktop computer."
+    },
     {
-        "name":"Gugul Calculator",
-        "url":"/calculator-app/",
-        "description":"Google Calculator on Web with Material You Theme."
+      "src": "screenshotsdesktop-PWA.png",
+      "sizes": "1920x1080",
+      "type": "image/png",
+      "description": "This is how it looks on desktop computer as PWA."
+    },
+    {
+      "src": "screenshotsmobile.png",
+      "sizes": "1080x1920",
+      "type": "image/png",
+      "description": "This is how it looks on mobile devices."
+    },
+    {
+      "src": "screenshotsdesktop.png",
+      "sizes": "1080x1920",
+      "type": "image/png",
+      "description": "This is how it looks on mobile devices as PWA."
     }
-]
+  ],
+  "related_applications": [
+    {
+      "platform": "windows",
+      "url": " The URL to your app in that app store"
+    }
+  ],
+  "prefer_related_applications": "false",
+  "shortcuts": [
+    {
+      "name": "Gugul Calculator",
+      "url": "/calculator-app/",
+      "description": "Google Calculator on Web with Material You Theme."
+    }
+  ]
 }
