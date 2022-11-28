@@ -19,13 +19,13 @@ https://fullydeepak.github.io/Google-Calculator-MD3/
 ## Screenshots 🖼️
 
 - Mobile
-![App Screenshot](screenshots\mobile.png)
+![App Screenshot](screenshots/mobile.png)
 - Mobile - PWA
-![App Screenshot](screenshots\mobile-PWA.png)
+![App Screenshot](screenshots/mobile-PWA.png)
 - Desktop
-![App Screenshot](screenshots\desktop.png)
+![App Screenshot](screenshots/desktop.png)
 - Desktop - PWA
-![App Screenshot](screenshots\desktop-PWA.png)
+![App Screenshot](screenshots/desktop-PWA.png)
 ## Bugs 🪲
 - operators, decimal dot(.),  is inputting multiple times.
 - ( ) is not working at all.
