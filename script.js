@@ -211,6 +211,7 @@ for (let i = 0; i < calcButtons.length; i++) {
         }
       }
       window.navigator.vibrate(18);
+      document.querySelector('.input-field').focus();
     });
   }
   //for % div
@@ -218,6 +219,7 @@ for (let i = 0; i < calcButtons.length; i++) {
     calcButtons[i].addEventListener('click', (e) => {
       changeX('%');
       window.navigator.vibrate(18);
+      document.querySelector('.input-field').focus();
     });
   }
   //for / div
@@ -225,6 +227,7 @@ for (let i = 0; i < calcButtons.length; i++) {
     calcButtons[i].addEventListener('click', (e) => {
       changeX('/');
       window.navigator.vibrate(18);
+      document.querySelector('.input-field').focus();
     });
   }
   //for X div
@@ -232,6 +235,7 @@ for (let i = 0; i < calcButtons.length; i++) {
     calcButtons[i].addEventListener('click', (e) => {
       changeX('*');
       window.navigator.vibrate(18);
+      document.querySelector('.input-field').focus();
     });
   }
   //for % div
@@ -239,6 +243,7 @@ for (let i = 0; i < calcButtons.length; i++) {
     calcButtons[i].addEventListener('click', (e) => {
       changeX('-');
       window.navigator.vibrate(18);
+      document.querySelector('.input-field').focus();
     });
   }
   //for % div
@@ -246,21 +251,15 @@ for (let i = 0; i < calcButtons.length; i++) {
     calcButtons[i].addEventListener('click', (e) => {
       changeX('+');
       window.navigator.vibrate(18);
+      document.querySelector('.input-field').focus();
+    });
+  } else if (i == 17) {
+    calcButtons[i].addEventListener('click', (e) => {
+      changeX('.');
+      window.navigator.vibrate(18);
+      document.querySelector('.input-field').focus();
     });
   }
-}
-
-function printValue(e) {
-  let touchKey = e.target.innerText;
-  console.log(e.key);
-  if (e.target.innerText == '%') {
-    txt.value += '%';
-    window.navigator.vibrate(18);
-  } else if (e.target.innerText == '·') {
-    txt.value += '.';
-    window.navigator.vibrate(18);
-  }
-  document.querySelector('.input-field').focus();
 }
 
 // Backspace and delete ko implemet karna hai
